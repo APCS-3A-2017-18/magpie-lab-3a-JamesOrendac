@@ -8,30 +8,30 @@ public class Magpie3
 	}
 	public String getResponse(String statement)
 	{
-		String response = "";
-		if (statement.length() == 0)
-		{
-			response = "Come on man, whats up?;
-		}
-		else if (findKeyword(statement, "no") >= 0)
-		{
-			response = "Why are you like that?";
-		}
-		else if (findKeyword(statement, "mother") >= 0
-				|| findKeyword(statement, "father") >= 0
-				|| findKeyword(statement, "sister") >= 0
-				|| findKeyword(statement, "brother") >= 0)
-		{
-			response = "Tell me about your family.";
-		}
-		else
-		{
-			response = getRandomResponse();
-		}
-		return response;
+	String response = "";
+	if (statement.length() == 0)
+	{
+	response = "Come on man, whats up?;
+	}
+	else if (findKeyword(statement, "no") >= 0)
+	{
+	response = "Why are you like that?";
+	}
+	else if (findKeyword(statement, "mother") >= 0
+	|| findKeyword(statement, "father") >= 0
+	|| findKeyword(statement, "sister") >= 0
+	|| findKeyword(statement, "brother") >= 0)
+	{
+	response = "Tell me about your family.";
+	}
+	else
+	{
+	response = getRandomResponse();
+	}
+	return response;
 	}
 	private int findKeyword(String statement, String goal,
-			int startPos)
+		int startPos)
 	{
 		String phrase = statement.trim();
 		int psn = phrase.toLowerCase().indexOf(goal.toLowerCase(),startPos);
