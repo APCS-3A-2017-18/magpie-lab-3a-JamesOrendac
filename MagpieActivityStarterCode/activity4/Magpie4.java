@@ -2,7 +2,7 @@ public class Magpie4
 {
 	public String getGreeting()
 	{
-	return "Hey, what's up?.";
+	return "Hey, what's up?";
 	}
 	public String getResponse(String statement)
 	{
@@ -11,7 +11,6 @@ public class Magpie4
 		{
 		response = "Come on man, whats up?";
 		}
-
 		else if (findKeyword(statement, "no") >= 0)
 		{
 		response = "Why are you like that?";
@@ -27,7 +26,6 @@ public class Magpie4
 		{
 		response = transformIWantToStatement(statement);
 		}
-
 		else
 		{
 			int psn = findKeyword(statement, "you", 0);
