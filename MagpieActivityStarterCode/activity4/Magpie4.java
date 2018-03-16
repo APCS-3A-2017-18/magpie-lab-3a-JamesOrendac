@@ -63,8 +63,8 @@ public class Magpie4
 				.length() - 1);
 		if (lastChar.equals("."))
 		{
-			statement = statement.substring(0, statement
-					.length() - 1);
+		statement = statement.substring(0, statement
+		.length() - 1);
 		}
 		
 		int psnOfYou = findKeyword (statement, "you", 0);
@@ -100,7 +100,7 @@ public class Magpie4
 	}
 	private int findKeyword(String statement, String goal)
 	{
-		return findKeyword (statement, goal, 0);
+	return findKeyword (statement, goal, 0);
 	}
 	private String getRandomResponse()
 	{
