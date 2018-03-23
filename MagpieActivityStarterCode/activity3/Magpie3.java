@@ -13,9 +13,13 @@ public class Magpie3
 	{
 	response = "Come on man, whats up?;
 	}
-	else if (findKeyword(statement, "no") >= 0)
+	else if (findKeyword(statement, "dog") >= 0)
 	{
-	response = "Why are you like that?";
+	response = "I also like dogs.";
+	}
+	else if (findKeyword(statement, "Mr.") >= 0)
+	{
+	response = "I liked that teacher as well.";
 	}
 	else if (findKeyword(statement, "mother") >= 0
 	|| findKeyword(statement, "father") >= 0
