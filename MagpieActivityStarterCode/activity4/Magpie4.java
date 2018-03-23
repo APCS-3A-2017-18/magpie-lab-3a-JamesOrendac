@@ -15,6 +15,14 @@ public class Magpie4
 		{
 		response = "Why are you like that?";
 		}
+		else if (findKeyword(statement, "I want") >= 0)
+		{
+		response = "Is that something you truely desire?";
+		}
+		else if (findKeyword(statement, "You") >= 0)
+		{
+		response = "Less abot me, more about you?";
+		}
 		else if (findKeyword(statement, "mother") >= 0
 		|| findKeyword(statement, "father") >= 0
 		|| findKeyword(statement, "sister") >= 0
@@ -26,6 +34,7 @@ public class Magpie4
 		{
 		response = transformIWantToStatement(statement);
 		}
+
 		else
 		{
 			int psn = findKeyword(statement, "you", 0);
