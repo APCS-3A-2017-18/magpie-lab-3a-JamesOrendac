@@ -149,39 +149,20 @@ public class Magpie5
 	}
 	private int findKeyword(String statement, String goal)
 	{
-		return findKeyword (statement, goal, 0);
+	return findKeyword (statement, goal, 0);
 	}
-	private String getRandomResponse()
+	private int findKeyword(String statement, String goal)
 	{
-		final int NUMBER_OF_RESPONSES = 6;
-		double r = Math.random();
-		int whichResponse = (int)(r * NUMBER_OF_RESPONSES);
-		String response = "";
-		
-		if (whichResponse == 0)
-		{
-		response = "Is that so? Please elaborate?.";
-		}
-		else if (whichResponse == 1)
-		{
-		response = "Really?.";
-		}
-		else if (whichResponse == 2)
-		{
-		response = "Why?";
-		}
-		else if (whichResponse == 3)
-		{
-		response = "How?.";
-		}
-		else if (whichResponse == 4)
-		{
-		response = "Why?";
-		}
-		else if (whichResponse == 5){
-		response = "Whats the point?";
-		}
-		return response;
-	};
+	return findKeyword (statement, goal, 0);
+	}
+	private String getRandomResponse ()
+	{
+	Random r = new Random ();
+	return randomResponses [r.nextInt(randomResponses.length)];
+	}
+	
+	private String [] randomResponses = {"Is that so? Please elaborate?", "Really?", "Why?", 
+	"That is crazy." , "Hey Wow!" , "Your point?", "ok","Got you."};
 	
 }
+
